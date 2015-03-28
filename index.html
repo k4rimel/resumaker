@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cvBuilder">
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+    <!-- <script type="text/javascript" src="css/libs/foundation.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.0/angular-material.min.css"> -->
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+
+    <script type="text/javascript" src="js/lib/angular-slidezilla.min.js"></script>
+    <link rel="stylesheet" href="js/lib/angular-slidezilla.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+    <!-- controllers -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/cvController.js"></script>
+    <!-- end controllers -->
+
+    <script type="text/javascript" src="js/utils/utils.js"></script>
+
+    <!--<script type="text/javascript" src="/js/routes.js"></script> -->
+
+    <!-- factories -->
+    <script type="text/javascript" src="js/factories/userFactory.js"></script>
+    <script type="text/javascript" src="js/factories/cvFactory.js"></script>
+    <!-- end factories -->
+
+    <!-- directives -->
+    <script type="text/javascript" src="js/directives/section.js"></script>
+    <script type="text/javascript" src="js/directives/block.js"></script>
+    <script type="text/javascript" src="js/directives/toolbar.js"></script>
+    <script type="text/javascript" src="js/directives/blocks/languages.js"></script>
+    <script type="text/javascript" src="js/directives/blocks/education.js"></script>
+    <script type="text/javascript" src="js/directives/blocks/skills.js"></script>
+    <script type="text/javascript" src="js/directives/blocks/employment.js"></script>
+    <script type="text/javascript" src="js/directives/blocks/blockToolbar.js"></script>
+    <!-- end diectives -->
+
+    <!-- filters -->
+    <script type="text/javascript" src="js/filters/dateFilter.js"></script>
+    <!-- end filers -->
+
+    <title>resumaker</title>
+ </head>
+<body>
+    <body>
+        <div class="row large-uncollapse profileContainer"  ng-controller="CvController as CvCtrl">
+          <div class="large-3 columns profileLeftSection profileSection large-collapse">
+              <div class="profileSectionContainer">
+                  <div class="row">
+                      <div class="large-12 columns">
+                          <div class="row">
+                              <div class="large-7 large-centered columns">
+                                  <div class="avatar centeredText topPad2">
+                                      <i class="fa fa-user fa-4x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>            
+                  <div class="row">
+                      <div class="large-12 columns profileName">
+                          <h5>{{CvCtrl.user.firstName}} {{CvCtrl.user.lastName}}</h5>
+                      </div>
+                  </div>            
+                  <div class="row">
+                      <div class="large-12 columns profileAge">
+                          <h5>25 ans</h5>
+                      </div>
+                  </div>            
+                  <div class="row">
+                      <div class="large-12 columns profileCity">
+                          <h5>Montpellier</h5>
+                      </div>
+                  </div> 
+                  <div class="row">
+                      <div class="large-12 columns profileField">
+                          <h5>Développeur Web</h5>
+                      </div>
+                  </div>            
+                  <div class="row">
+                      <div class="large-12 columns profileProm">
+                          <h5>RIL</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="large-9 columns profileCenterSection profileSection large-collapse">
+              <div class=" row profileSectionContainer">
+                    <div class="columns large-12">
+                        <div class="row toolBar">
+                            <div class="columns large-12">
+                                <toolbar-block></toolbar-block>
+                            </div>
+                        </div>
+<<<<<<< HEAD
+                        <div class="row cvContent topPad2">
+                          <div class="columns large-12">
+                            <div class="row" ng-mouseover="hoverEdit = true" ng-mouseleave="hoverEdit = false">
+                              <div class="columns large-11">
+                                <input  type="text" class="cvTitle viewMode editor" value="{{CvCtrl.data.title}}" ng-blur="CvCtrl.update($event)">
+                              </div>
+                              <div class="columns large-1">
+                                <span ng-show="hoverEdit"><a><i class="fa fa-pencil-square fa-2x"></i></a></span>
+                              </div>
+                            </div> 
+                            <div class="row">
+                              <div class="columns large-12">
+                                <section-block></section-block>
+                              </div>
+                            </div>
+                          </div>
+=======
+                        <div class="row">
+                          <input type="text" class="viewMode" value="{{CvCtrl.data.title}}" ng-blur="CvCtrl.save($event)">
+                            <h3></h3>
+                        </div>
+                        <div class="row">
+                            <section-block></section-block>
+>>>>>>> origin/master
+                        </div>
+                    </div>
+              </div>
+          </div>  
+        </div>
+        <!-- <div ng-view></div> -->
+    </body>
+</body>
+</html>

@@ -1,0 +1,325 @@
+@font-face {
+font-family: 'robotoBold';
+src: url('font/Roboto-Bold.ttf');
+}
+
+@font-face {
+font-family: 'roboto';
+src: url('font/Roboto-Light.ttf');
+}
+
+@font-face {
+font-family: 'robotoMedium';
+src: url('font/Roboto-Medium.ttf');
+}
+
+@font-face {
+font-family: 'robotoLight';
+src: url('font/Roboto-Light.ttf');
+}
+
+@font-face {
+font-family: 'robotoThin';
+src: url('font/Roboto-Thin.ttf');
+}
+
+body {
+	background-color: #fff;
+	font-family: 'roboto';
+	margin: 0;
+	padding: 0;
+	color : #444;
+}
+.icon-white {
+	color:#fff;
+}
+.search-icon {
+	margin-left: 1em;
+}
+span#title {
+	color : #444;
+	font-size: 42px;
+}
+h1 {
+	font-family : 'robotoThin';
+	text-align: center;
+	color: #fff;
+	font-size: 4em;
+}
+h1#mainTitle {
+	color:#008cba;
+}
+label.loginLbl {
+	font-size: 1.1em;
+}
+.formContainer {
+	padding-top:1em;
+	background-color: #fff;
+	border-radius: 1em;
+	box-shadow: 2px 2px 3px #bbb;
+	background-color: #f2f2f2;
+}
+div.forgotPwd {
+	text-align: right;
+}
+#formLegend {
+	padding-bottom: 1.5em;
+	font-size: 2.0em;
+	color:#999;
+}
+.signUpIcons {
+	font-size: 2em;
+	color: #999;
+}
+.rememberMe {
+	color : #aaa;
+	font-size: 0.7em;
+}
+input.btnLogin {
+	margin-top:1em;
+	border-radius: 5px;
+}
+
+div.button, input.button, button.button, .button-group>li>button, .button-group>li .button {
+	/*border-radius: 5px;*/
+	box-shadow: 2px 2px 5px #732C7B;
+	border-bottom: 3px solid #4A0E50;
+}
+div.button, input.button, button.button, .button-group>li>button, .button-group>li .button:hover {
+	border:none;
+	height:54px;
+}
+.purple {
+	color:#732C7B;
+}
+.titleIcon {
+	font-size: 1.5em;
+
+}
+div.headerBlock {
+	min-height: 9em;
+	padding-top: 1em;
+}
+.avatar {
+	border-radius: 50%;
+	background-color: #bbb;
+	height: 6em;
+	width: 6em;
+}
+div.centeredText {
+	text-align: center;
+}
+div.topPad1 {
+	padding-top:.5em;
+}
+div.topPad2 {
+	padding-top:1em;
+}
+div.topMar1 {
+	margin-top:.5em;
+}
+div.topMar2 {
+	margin-top:1em;
+}
+div.row.topMar1 {
+	margin-top:.5em;
+}
+div.row.topMar2 {
+	margin-top:1em;
+}
+div.postContent {
+	height: 9em;
+}
+div.postDate, div.commentDate {
+	font-size: .95em;
+}
+div.mainContainer {
+	background-color: #fff;
+	box-shadow: 0px 0px 35px #ddd;
+}
+img#captcha {
+	background-color: #bbb;
+	margin-bottom: 1em;
+}
+div.panel.callout p{
+	color: #A14465;
+}
+div.panel.callout.successMessage.panel.callout {
+	border-color: #b6edff;
+	background: #C8F1FF;
+}
+div.panel.callout.successMessage p {
+	color: #3AA65F;
+}
+div.avatar.small {
+	width: 3em;
+	height: 3em;
+}
+div.commentSectionTitleContainer {
+	margin-bottom: 1em;
+}
+div.profileName {
+	text-align: center;
+}
+div.profileSection {
+	min-height: 6em;
+	
+}
+div.cvSection {
+	min-height: 6em;
+}
+div.profileContainer {
+	min-height: 15em;
+	
+}
+div.profileSectionContainer {
+	background-color: #fff;
+	padding:.5em;
+	box-shadow: 0px 0px 6px #ddd;
+}
+input.editor, textarea.editor {
+	background-color: inherit;
+	border: 0;
+	box-shadow: none;
+	overflow:hidden;
+
+}
+input.editor:hover, textarea.editor:hover {
+	border-bottom: 1px solid #ddd;
+}
+input.editor:focus{
+	background-color: inherit;
+	border-bottom: 2px solid #ccc;
+	overflow:hidden;
+}
+textarea.editor:focus {
+	background-color: inherit;
+	border: 2px solid #ccc;
+	
+}
+a.button.toolBarBtn {
+	box-shadow: 0px 0px 4px #ccc;
+}
+a.button.toolBarBtn:hover {
+	box-shadow: 0px 0px 16px #ccc;
+}
+div.odd {
+	background-color: inherit;
+}
+div.even {
+	background-color: #fafafa;
+	
+}
+input.cvTitle {
+	font-size:1.4em;
+}
+label.sectionTitle {
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	padding-top: 1em;
+	text-indent: 1em;
+}
+.icon {
+	display: inline-block;
+	width: 1.8em;
+	height: 1.8em;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 0.2em;
+	border: 2px solid #444444;
+}
+input.blockTitleInput {
+	font-size: 1.1em;
+}
+input.blockDateInput {
+	font-size: 0.89em;
+}
+input.blockCompanyInput {
+	font-size: 1.03em;
+}
+input.blockTitleInput.skills {
+	text-align: center;
+}
+div.toolBarContainer {
+	background-color: #333;
+}
+div.chartContainer {
+	width: 15em;
+	background-color: #bbb;
+	border-radius: .3em;
+	display: block;
+	height: .6em;
+	margin-top: .9em;
+}
+.blockValue {
+	background-color: #777;
+	height: .6em;
+	border-radius: .3em;
+}
+.block10{
+	width: 1.5em;
+}
+.block20{
+	width: 3em;
+}
+.block30{
+	width: 4.5em;
+}
+.block40{
+	width: 6em;
+}
+.block50{
+	width: 7.5em;
+}
+.block60{
+	width: 9em;
+}
+.block70{
+	width: 10.5em;
+}
+.block80{
+	width: 12em;
+}
+.block90{
+	width: 13.5em;
+}
+.block100{
+	width: 15em;
+}
+
+.closeSliderBtn {
+	margin-left: 1.3em;
+}
+.slider-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #0e90d2;
+  background-image: -moz-linear-gradient(top, #4A0E50, #742C7B);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4A0E50), to(#742C7B));
+  background-image: -webkit-linear-gradient(top, #4A0E50, #742C7B);
+  background-image: -o-linear-gradient(top, #4A0E50, #742C7B);
+  background-image: linear-gradient(to bottom, #4A0E50, #742C7B);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  opacity: 0.8;
+  border: 0px solid transparent;
+}
+input.dateInput {
+	text-align: center;
+}
+div.arrowDateContainer {
+  	padding-top: .45em;
+  	text-align: center;
+}
+div.blockInnerContainer{
+	min-height:95px;
+}
+div.blockInnerContainer:hover {
+	border: 2px dashed #ddd;
+}
